@@ -1,7 +1,8 @@
 package stream;
 
 
-public class User {
+public class User implements Comparable {
+    private Long id;
     private String name;
     private int age;
     private String email;
@@ -10,6 +11,13 @@ public class User {
     }
 
     public User(String name, int age, String email) {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+    }
+
+    public User(Long id, String name, int age, String email) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.email = email;
@@ -37,5 +45,18 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return 0;
     }
 }
