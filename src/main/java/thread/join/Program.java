@@ -1,4 +1,4 @@
-package thread.example1;
+package thread.join;
 
 public class Program {
 

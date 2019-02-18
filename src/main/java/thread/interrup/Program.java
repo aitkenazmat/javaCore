@@ -1,4 +1,4 @@
-package thread.example2;
+package thread.interrup;
 
 public class Program {
     public static void main(String[] args) {

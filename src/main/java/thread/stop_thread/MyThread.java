@@ -1,4 +1,4 @@
-package thread.example3;
+package thread.stop_thread;
 
 public class MyThread implements Runnable {
 

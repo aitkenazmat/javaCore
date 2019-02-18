@@ -1,20 +1,16 @@
-package thread.example1;
+package thread.interrup;
 
-public class JThread extends Thread {
-
-    public JThread(String name) {
-        super(name);
-    }
+public class MyThread implements Runnable {
 
     @Override
     public void run() {
         System.out.printf("%s started... \n", Thread.currentThread().getName());
         try{
-            Thread.sleep(5000);
+            Thread.sleep(500);
         }
         catch(InterruptedException e){
             System.out.println("Thread has been interrupted");
         }
-        System.out.printf("%s fiished... \n", Thread.currentThread().getName());
+        System.out.printf("%s finished... \n", Thread.currentThread().getName());
     }
 }
