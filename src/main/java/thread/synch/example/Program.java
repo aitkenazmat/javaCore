@@ -7,12 +7,14 @@ public class Program {
 
     public static void main(String[] args) {
 
-        MyThread myThread1 = new MyThread("11");
-        MyThread myThread2 = new MyThread("11");
-        MyThread myThread3 = new MyThread("11");
+        String key11 = "11";
+        String key15 = "15";
+        MyThread myThread1 = new MyThread(key11);
+        MyThread myThread2 = new MyThread(key11);
+        MyThread myThread3 = new MyThread(key11);
 
         MyThread myThread4 = new MyThread("14");
-        MyThread myThread5 = new MyThread("15");
+        MyThread myThread5 = new MyThread(key15);
         MyThread myThread6 = new MyThread("16");
         List<MyThread> myThreadList = new LinkedList<>();
         myThreadList.add(myThread1);

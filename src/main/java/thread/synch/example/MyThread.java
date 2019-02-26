@@ -18,5 +18,13 @@ public class MyThread implements Runnable {
                 e.printStackTrace();
             }
         }
+
+
+        System.out.printf("thread name=%s key=%s %tc \n", Thread.currentThread().getName(), key,new Date());
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
